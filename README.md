@@ -1,4 +1,4 @@
-# Tiny Clips
+# Tiny Clips ✂️
 
 [![Build](https://github.com/jamesmontemagno/tiny-clips/actions/workflows/build.yml/badge.svg)](https://github.com/jamesmontemagno/tiny-clips/actions/workflows/build.yml)
 [![Release](https://github.com/jamesmontemagno/tiny-clips/actions/workflows/release.yml/badge.svg)](https://github.com/jamesmontemagno/tiny-clips/actions/workflows/release.yml)
@@ -14,28 +14,28 @@ video (MP4), and animated GIFs of a selected screen region — on **macOS** and 
 ![tiny-clips-promo (1)](https://github.com/user-attachments/assets/0afc2c8a-a83b-4703-9873-b4fb0c315c06)
 
 
-## Features
+## ✨ Features
 
-- **Screenshot** — Select a region, screen, or window and capture a PNG screenshot
-- **Video Recording** — Record to MP4 with hardware-accelerated H.264 encoding
-- **GIF Recording** — Record a screen region as an animated GIF
-- **Capture Picker** — Choose **Region**, **Screen**, or **Window** before any capture
-- **Editor & Trimmers** — Post-capture screenshot editor plus video and GIF trimmers
-- **Menu Bar / Tray App** — Lives in the macOS menu bar or Windows system tray with no Dock/taskbar icon
-- **Region Selection** — Drag to select any portion of any screen
-- **Global Hotkeys** — Quick capture from anywhere
-- **Configurable** — Save location, clipboard, reveal-in-Finder/Explorer, GIF quality, trimmer toggles, and more
+- **📸 Screenshot** — Select a region, screen, or window and capture a PNG screenshot
+- **🎥 Video Recording** — Record to MP4 with hardware-accelerated H.264 encoding
+- **🖼️ GIF Recording** — Record a screen region as an animated GIF
+- **🎯 Capture Picker** — Choose **Region**, **Screen**, or **Window** before any capture
+- **✂️ Editor & Trimmers** — Post-capture screenshot editor plus video and GIF trimmers
+- **🧭 Menu Bar / Tray App** — Lives in the macOS menu bar or Windows system tray with no Dock/taskbar icon
+- **📐 Region Selection** — Drag to select any portion of any screen
+- **⌨️ Global Hotkeys** — Quick capture from anywhere
+- **⚙️ Configurable** — Save location, clipboard, reveal-in-Finder/Explorer, GIF quality, trimmer toggles, and more
 
 > macOS uses Sparkle for auto-updates; Windows distributes via **winget** (`winget upgrade`) and the Microsoft Store.
 
-## macOS
+## 🍎 macOS
 
-### Requirements
+### ✅ Requirements
 
 - macOS 15.0 (Sequoia) or later
 - Xcode 16.0 or later (to build from source)
 
-### Installation
+### 📦 Installation
 
 **Homebrew**
 
@@ -65,11 +65,11 @@ Download the latest release from the [Releases](https://github.com/jamesmontemag
 3. Add the Sparkle package dependency (see [Sparkle Setup](#sparkle-setup))
 4. Build and run (⌘R)
 
-### Permissions
+### 🔐 Permissions
 
 TinyClips requires **Screen Recording** permission. On first launch, macOS will prompt you to grant access. After granting, restart the app.
 
-### Keyboard Shortcuts
+### ⌨️ Keyboard Shortcuts
 
 | Action | Shortcut |
 |--------|----------|
@@ -81,16 +81,16 @@ TinyClips requires **Screen Recording** permission. On first launch, macOS will 
 | Stop Recording | ⌘. |
 | Settings | ⌘, |
 
-## Windows
+## 🪟 Windows
 
 A native **WinUI 3 / Windows App SDK** port lives under [`/windows`](windows/README.md).
 
-### Requirements
+### ✅ Requirements
 
 - Windows 11 **22H2 (build 22621)** or later
 - [.NET 10 SDK](https://dotnet.microsoft.com/) and Windows SDK `10.0.26100` (to build from source)
 
-### Installation
+### 📦 Installation
 
 **winget** — Tiny Clips is published in the [winget community repository](https://github.com/microsoft/winget-pkgs), so you can install it from any Windows 11 terminal:
 
@@ -117,7 +117,7 @@ dotnet run --project windows/src/TinyClips.App/TinyClips.App.csproj -c Debug -p:
 
 See the [Windows README](windows/README.md) for full build, layout, and CI details.
 
-### Keyboard Shortcuts
+### ⌨️ Keyboard Shortcuts
 
 | Action | Shortcut |
 |--------|----------|
@@ -128,7 +128,7 @@ See the [Windows README](windows/README.md) for full build, layout, and CI detai
 | Picker: Cancel | Esc |
 | Stop Recording | Ctrl+Shift+S |
 
-## Usage
+## 🚀 Usage
 
 1. Click the Tiny Clips icon in the menu bar (macOS) or system tray (Windows)
 2. Choose **Screenshot**, **Record Video**, or **Record GIF**
@@ -136,7 +136,7 @@ See the [Windows README](windows/README.md) for full build, layout, and CI detai
 4. For region recordings, confirm audio/mic options in the floating **Record** panel
 5. Click the floating **Stop** button when done (or use the stop shortcut)
 
-## Settings
+## ⚙️ Settings
 
 | Option | Description |
 |--------|-------------|
@@ -148,7 +148,7 @@ See the [Windows README](windows/README.md) for full build, layout, and CI detai
 | Video Frame Rate | 24, 30, or 60 fps |
 | Open Trimmer | Show trim editor after recording |
 
-## Sparkle Setup (macOS)
+## ✨ Sparkle Setup (macOS)
 
 Sparkle must be added manually via Xcode:
 
@@ -160,12 +160,12 @@ Sparkle must be added manually via Xcode:
 
 See [docs/sparkle-setup.md](docs/sparkle-setup.md) for full setup including key generation.
 
-## App Store / Store Variants
+## 🏪 App Store / Store Variants
 
 - **macOS:** to ship both a direct (Sparkle, non-sandbox) build and a Mac App Store (sandboxed, no Sparkle) build from one codebase, see [docs/app-store-variant-setup.md](docs/app-store-variant-setup.md).
 - **Windows:** the WinUI 3 app targets a free **winget**/direct build now and a Microsoft Store listing later; see [`/plans/windows-winui3-port-plan.md`](plans/windows-winui3-port-plan.md).
 
-## Architecture
+## 🏗️ Architecture
 
 **macOS**
 
@@ -189,17 +189,17 @@ Windows.Graphics.Capture (Direct3D11CaptureFramePool)
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) and the [Windows README](windows/README.md) for component-level detail.
 
-## License
+## 📄 License
 
 MIT License. See [LICENSE](LICENSE) for details.
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a [Pull Request](https://github.com/jamesmontemagno/tiny-clips/pulls).
 
 Found a bug or have a feature request? [Open an issue](https://github.com/jamesmontemagno/tiny-clips/issues/new).
 
-## Release Tagging Helpers
+## 🏷️ Release Tagging Helpers
 
 Create one or both release tags by selecting platforms (`--mac`, `--windows`):
 
